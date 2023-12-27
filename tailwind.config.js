@@ -13,6 +13,7 @@ export default {
         'baseColor' : '#FF9500',
         'primaryColor' : '#262626',
         'secondaryColor' : '#FCFCFD',
+        'thirdColor' : '#59595A',
         'bodyColor' : '#F7F7F8',
         'navColor' : '#F1F1F3'
       }

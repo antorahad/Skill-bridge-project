@@ -47,19 +47,19 @@ const Footer = () => {
                     <header className="mb-3 text-primaryColor text-[18px] font-[600]">Social Profiles</header>
                     <div className='flex gap-7'>
                         <Link>
-                            <span className='hover:text-baseColor'>
+                            <div className='hover:text-baseColor w-12 h-12 bg-navColor shadow-md flex items-center justify-center rounded-lg p-2'>
                                 <FaFacebook size={20} />
-                            </span>
+                            </div>
                         </Link>
                         <Link>
-                            <span className='hover:text-baseColor'>
+                            <div className='hover:text-baseColor w-12 h-12 bg-navColor shadow-md flex items-center justify-center rounded-lg p-2'>
                                 <FaTwitter size={20} />
-                            </span>
+                            </div>
                         </Link>
                         <Link>
-                            <span className='hover:text-baseColor'>
+                            <div className='hover:text-baseColor w-12 h-12 bg-navColor shadow-md flex items-center justify-center rounded-lg p-2'>
                                 <FaLinkedin size={20} />
-                            </span>
+                            </div>
                         </Link>
                     </div>
                 </nav>
