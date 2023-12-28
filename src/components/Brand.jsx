@@ -11,7 +11,7 @@ const Brand = () => {
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
             <div className='bg-white p-5 rounded-lg shadow-sm'>
-                <Marquee>
+                <Marquee direction='right' speed={30}>
                     <div className="flex items-center justify-center gap-2">
                         <img src={card1} />
                         <img src={card2} />

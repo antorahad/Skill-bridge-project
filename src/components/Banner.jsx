@@ -13,7 +13,7 @@ const Banner = () => {
                 </div>
                 <div className="flex items-center justify-center gap-5">
                     <button className="btn bg-baseColor hover:bg-baseColor focus:bg-baseColor rounded-md text-white border-none outline-none text-[14px] font-[600]">Explore Courses</button>
-                    <button className="btn bg-white hover:bg-white focus:bg-white rounded-md text-primaryColor border-none outline-none text-[14px] font-[600]">View Pricing</button>
+                    <button className="btn rounded-md text-primaryColor border-none outline-none text-[14px] font-[600]">View Pricing</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,178 @@
+[
+    {
+        "id" : 1,
+        "category" : "monthly",
+        "title" : "Free Plan",
+        "price" : "$0",
+        "extra" : "monthly",
+        "features" : [
+            {
+                "id" : 1,
+                "status" : true,
+                "feature" : "Access to selected free courses."
+            },
+            {
+                "id" : 2,
+                "status" : true,
+                "feature" : "Limited course materials and resources."
+            },
+            {
+                "id" : 3,
+                "status" : true,
+                "feature" : "Basic community support."
+            },
+            {
+                "id" : 4,
+                "status" : true,
+                "feature" : "No certification upon completion."
+            },
+            {
+                "id" : 5,
+                "status" : true,
+                "feature" : "Ad-supported platform."
+            },
+            {
+                "id" : 6,
+                "status" : false,
+                "feature" : "Access to exclusive Pro Plan community forums."
+            },
+            {
+                "id" : 7,
+                "status" : false,
+                "feature" : "Early access to new courses and updates."
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "category" : "monthly",
+        "title" : "Pro Plan",
+        "price" : "$79",
+        "extra" : "monthly",
+        "features" : [
+            {
+                "id" : 1,
+                "status" : true,
+                "feature" : "Unlimited access to all courses."
+            },
+            {
+                "id" : 2,
+                "status" : true,
+                "feature" : "Unlimited course materials and resources."
+            },
+            {
+                "id" : 3,
+                "status" : true,
+                "feature" : "Priority support from instructors."
+            },
+            {
+                "id" : 4,
+                "status" : true,
+                "feature" : "Course completion certificates."
+            },
+            {
+                "id" : 5,
+                "status" : true,
+                "feature" : "Ad-free experience."
+            },
+            {
+                "id" : 6,
+                "status" : true,
+                "feature" : "Access to exclusive Pro Plan community forums."
+            },
+            {
+                "id" : 7,
+                "status" : true,
+                "feature" : "Early access to new courses and updates."
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "category" : "yearly",
+        "title" : "Free Plan",
+        "price" : "$0",
+        "extra" : "yearly",
+        "features" : [
+            {
+                "id" : 1,
+                "status" : true,
+                "feature" : "Access to selected free courses."
+            },
+            {
+                "id" : 2,
+                "status" : true,
+                "feature" : "Limited course materials and resources."
+            },
+            {
+                "id" : 3,
+                "status" : true,
+                "feature" : "Basic community support."
+            },
+            {
+                "id" : 4,
+                "status" : true,
+                "feature" : "No certification upon completion."
+            },
+            {
+                "id" : 5,
+                "status" : true,
+                "feature" : "Ad-supported platform."
+            },
+            {
+                "id" : 6,
+                "status" : false,
+                "feature" : "Access to exclusive Pro Plan community forums."
+            },
+            {
+                "id" : 7,
+                "status" : false,
+                "feature" : "Early access to new courses and updates."
+            }
+        ]
+    },
+    {
+        "id" : 4,
+        "category" : "yearly",
+        "title" : "Pro Plan",
+        "price" : "$179",
+        "extra" : "yearly",
+        "features" : [
+            {
+                "id" : 1,
+                "status" : true,
+                "feature" : "Unlimited access to all courses."
+            },
+            {
+                "id" : 2,
+                "status" : true,
+                "feature" : "Unlimited course materials and resources."
+            },
+            {
+                "id" : 3,
+                "status" : true,
+                "feature" : "Priority support from instructors."
+            },
+            {
+                "id" : 4,
+                "status" : true,
+                "feature" : "Course completion certificates."
+            },
+            {
+                "id" : 5,
+                "status" : true,
+                "feature" : "Ad-free experience."
+            },
+            {
+                "id" : 6,
+                "status" : true,
+                "feature" : "Access to exclusive Pro Plan community forums."
+            },
+            {
+                "id" : 7,
+                "status" : true,
+                "feature" : "Early access to new courses and updates."
+            }
+        ]
+    }
+]

@@ -45,11 +45,6 @@ const Navbar = () => {
                     <div className="navbar-end">
                         <ul className="flex items-center justify-center">
                             <li className="px-3">
-                                <button className="btn bg-white hover:bg-white focus:bg-white rounded-md text-primaryColor border-none outline-none text-[14px] font-[600]">
-                                    Sign Up
-                                </button>
-                            </li>
-                            <li className="px-3">
                                 <Link>
                                     <button className="btn bg-baseColor hover:bg-baseColor focus:bg-baseColor border-none outline-none text-white text-[14px] font-[600] rounded-md">
                                         Login
