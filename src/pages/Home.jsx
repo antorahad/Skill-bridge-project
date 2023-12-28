@@ -4,6 +4,8 @@ import Benifit from "../components/Benifit";
 import BenifitCard from "../components/BenifitCard";
 import Brand from "../components/Brand";
 import Hero from "../components/Hero";
+import HomeCourse from "../components/HomeCourse";
+import HomeCourseCard from "../components/HomeCourseCard";
 
 const Home = () => {
     const [cards, setCards] = useState([])
@@ -32,6 +34,8 @@ const Home = () => {
             <Hero />
             <Benifit handleClick={handleClick} viewAll={viewAll} />
             <BenifitCard cards={cards} displayCards={displayCards} />
+            <HomeCourse/>
+            <HomeCourseCard/>
         </div>
     );
 };
