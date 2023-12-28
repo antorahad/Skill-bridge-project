@@ -30,7 +30,7 @@ const Home = () => {
             <Banner />
             <Brand />
             <Hero />
-            <Benifit handleClick={handleClick} />
+            <Benifit handleClick={handleClick} viewAll={viewAll} />
             <BenifitCard cards={cards} displayCards={displayCards} />
         </div>
     );
