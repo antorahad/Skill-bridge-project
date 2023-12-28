@@ -4,7 +4,7 @@ const CourseCard = ({ item }) => {
         <div>
             <div className="card bg-white shadow-sm rounded-md">
                 <figure className="px-10 pt-10">
-                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+                    <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body px-10 space-y-5">
                     <div className="flex items-center justify-between">

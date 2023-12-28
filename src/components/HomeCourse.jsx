@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const HomeCourse = () => {
+const HomeCourse = ({handleCourse, viewAllCourse}) => {
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
             <div className="flex items-center justify-between">
@@ -10,7 +10,7 @@ const HomeCourse = () => {
                 </div>
                 <div>
                     <Link>
-                        <button className="btn bg-white hover:bg-white focus:bg-white rounded-md text-primaryColor border-none outline-none text-[14px] font-[600]">View All</button>
+                        <button onClick={handleCourse} className="btn bg-baseColor hover:bg-baseColor focus:bg-baseColor rounded-md text-white border-none outline-none text-[14px] font-[600]">{viewAllCourse ? 'Show Less' : 'View All'}</button>
                     </Link>
                 </div>
             </div>

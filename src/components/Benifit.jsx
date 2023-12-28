@@ -7,7 +7,7 @@ const Benifit = ({ handleClick, viewAll }) => {
                     <p className="text-[16px] font-[400] text-thirdColor">Unlock your potential with diverse courses; learn, grow, and excel in your chosen field.</p>
                 </div>
                 <div>
-                    <button onClick={handleClick} className="btn bg-white hover:bg-white focus:bg-white rounded-md text-primaryColor border-none outline-none text-[14px] font-[600]">{viewAll ? 'Show Less' : 'View All'}</button>
+                    <button onClick={handleClick} className="btn bg-baseColor hover:bg-baseColor focus:bg-baseColor rounded-md text-white border-none outline-none text-[14px] font-[600]">{viewAll ? 'Show Less' : 'View All'}</button>
                 </div>
             </div>
         </div>

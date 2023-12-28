@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Web Design Fundamentals",
-        "image": "",
+        "image": "https://i.ibb.co/cY3FLFq/course-one.jpg",
         "duration": "4 Weeks",
         "level": "Beginner",
         "instructor": "John Smith",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "UI/UX Design",
-        "image": "",
+        "image": "https://i.ibb.co/RghSP4B/course-two.jpg",
         "duration": "6 Weeks",
         "level": "Intermediate",
         "instructor": "Emily Johnson",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "title": "Mobile App Development",
-        "image": "",
+        "image": "https://i.ibb.co/34ZL6FY/course-three.jpg",
         "duration": "8 Weeks",
         "level": "Intermediate",
         "instructor": "David Brown",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "title": "Graphic Design for Beginners",
-        "image": "",
+        "image": "https://i.ibb.co/4tjfD68/course-four.jpg",
         "duration": "10 Weeks",
         "level": "Beginner",
         "instructor": "Sarah Thompson",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "title": "Front-End Web Development",
-        "image": "",
+        "image": "https://i.ibb.co/B6BtSWN/course-five.jpg",
         "duration": "10 Weeks",
         "level": "Intermediate",
         "instructor": "Michael Adams",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "title": "Advanced JavaScript",
-        "image": "",
+        "image": "https://i.ibb.co/mFRcsWc/course-six.jpg",
         "duration": "6 Weeks",
         "level": "Advance",
         "instructor": "Jennifer Wilson",
