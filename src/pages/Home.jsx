@@ -97,6 +97,41 @@ const Home = () => {
         plan.filter(item => item.category.toLowerCase() === selectedCategory.toLowerCase()) :
         plan;
 
+    const [faqToggleOne, setFaqToggleOne] = useState(false);
+    const [faqToggleTwo, setFaqToggleTwo] = useState(false);
+    const [faqToggleThree, setFaqToggleThree] = useState(false);
+    const [faqToggleFour, setFaqToggleFour] = useState(false);
+    const [faqToggleFive, setFaqToggleFive] = useState(false);
+    const [faqToggleSix, setFaqToggleSix] = useState(false);
+
+    const handleFaqAll = () => {
+        setFaqToggleOne(!faqToggleOne)
+        setFaqToggleTwo(!faqToggleTwo)
+        setFaqToggleThree(!faqToggleThree)
+        setFaqToggleFour(!faqToggleFour)
+        setFaqToggleFive(!faqToggleFive)
+        setFaqToggleSix(!faqToggleSix)
+    }
+
+    const handleFaqOne = () => {
+        setFaqToggleOne(!faqToggleOne)
+    }
+    const handleFaqTwo = () => {
+        setFaqToggleTwo(!faqToggleTwo)
+    }
+    const handleFaqThree = () => {
+        setFaqToggleThree(!faqToggleThree)
+    }
+    const handleFaqFour = () => {
+        setFaqToggleFour(!faqToggleFour)
+    }
+    const handleFaqFive = () => {
+        setFaqToggleFive(!faqToggleFive)
+    }
+    const handleFaqSix = () => {
+        setFaqToggleSix(!faqToggleSix)
+    }
+
 
     return (
         <div>
@@ -111,7 +146,21 @@ const Home = () => {
             <TestimonialCard testimonials={testimonials} displayTestimonials={displayTestimonials} />
             <Pricing planCategories={planCategories} selectedCategory={selectedCategory} handlePlanCategory={handlePlanCategory} />
             <PricingCard filteredPlan={filteredPlan} />
-            <Faqs/>
+            <Faqs
+                faqToggleOne={faqToggleOne}
+                faqToggleTwo={faqToggleTwo}
+                faqToggleThree={faqToggleThree}
+                faqToggleFour={faqToggleFour}
+                faqToggleFive={faqToggleFive}
+                faqToggleSix={faqToggleSix}
+                handleFaqAll={handleFaqAll}
+                handleFaqOne={handleFaqOne}
+                handleFaqTwo={handleFaqTwo}
+                handleFaqThree={handleFaqThree}
+                handleFaqFour={handleFaqFour}
+                handleFaqFive={handleFaqFive}
+                handleFaqSix={handleFaqSix}
+            />
         </div>
     );
 };
