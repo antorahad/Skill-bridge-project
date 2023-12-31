@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 const CardPlan = ({ item }) => {
     const { id, category, title, price, extra, features } = item
     return (
-        <div className="card bg-navColor w-full shadow-sm rounded-md">
+        <div className="card bg-navColor bg-opacity-50 w-full rounded-md">
             <div className="card-body text-center space-y-4">
                 <h2 className="text-[18px] font-[500] capitalize bg-baseColor bg-opacity-15 w-full p-3 rounded-md">{title}</h2>
                 <p className="text-[60px] font-[600]">{price} <span className="text-[16px] font-[500]">/{extra}</span></p>

@@ -10,6 +10,7 @@ import Testimonials from "../components/Testimonials.Jsx";
 import TestimonialCard from "../components/TestimonialCard";
 import Pricing from "../components/Pricing";
 import PricingCard from "../components/PricingCard";
+import Faqs from "../components/Faqs";
 
 const Home = () => {
     const [cards, setCards] = useState([])
@@ -110,6 +111,7 @@ const Home = () => {
             <TestimonialCard testimonials={testimonials} displayTestimonials={displayTestimonials} />
             <Pricing planCategories={planCategories} selectedCategory={selectedCategory} handlePlanCategory={handlePlanCategory} />
             <PricingCard filteredPlan={filteredPlan} />
+            <Faqs/>
         </div>
     );
 };
