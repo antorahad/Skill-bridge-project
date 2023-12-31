@@ -27,20 +27,29 @@ const Home = () => {
     const [testimonials, setTestimonials] = useState([])
     useEffect(() => {
         fetch('./testimonials.json')
-        .then(res => res.json())
-        .then(data => setTestimonials(data))
+            .then(res => res.json())
+            .then(data => setTestimonials(data))
     }, [])
-    const [planCategory, setPlanCategory] = useState([])
+    const [planCategories, setPlanCategories] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState(null);
+
     useEffect(() => {
         fetch('./planCategory.json')
-        .then(res => res.json())
-        .then(data => setPlanCategory(data))
-    }, [])
+            .then(res => res.json())
+            .then(data => {
+                setPlanCategories(data);
+                // Set the default selected category to the first item in the array
+                if (data.length > 0) {
+                    setSelectedCategory(data[0].category);
+                }
+            })
+            .catch(error => console.error("Error fetching data:", error));
+    }, []);
     const [plan, setPlan] = useState([])
     useEffect(() => {
         fetch('./plan.json')
-        .then(res => res.json())
-        .then(data => setPlan(data))
+            .then(res => res.json())
+            .then(data => setPlan(data))
     }, [])
     const [displayCards, setDisplayCards] = useState(3)
     const [viewAll, setViewAll] = useState(false)
@@ -78,6 +87,16 @@ const Home = () => {
             setViewAllTestimonials(true);
         }
     }
+
+    const handlePlanCategory = (category) => {
+        setSelectedCategory(category);
+    };
+
+    const filteredPlan = selectedCategory ?
+        plan.filter(item => item.category.toLowerCase() === selectedCategory.toLowerCase()) :
+        plan;
+
+
     return (
         <div>
             <Banner />
@@ -87,10 +106,10 @@ const Home = () => {
             <BenifitCard cards={cards} displayCards={displayCards} />
             <HomeCourse handleCourse={handleCourse} viewAllCourse={viewAllCourse} />
             <HomeCourseCard courses={courses} displayCourses={displayCourses} />
-            <Testimonials handleTestimonial={handleTestimonial} viewAllTestimonials={viewAllTestimonials}/>
-            <TestimonialCard testimonials={testimonials} displayTestimonials={displayTestimonials}/>
-            <Pricing planCategory={planCategory}/>
-            <PricingCard plan={plan}/>
+            <Testimonials handleTestimonial={handleTestimonial} viewAllTestimonials={viewAllTestimonials} />
+            <TestimonialCard testimonials={testimonials} displayTestimonials={displayTestimonials} />
+            <Pricing planCategories={planCategories} selectedCategory={selectedCategory} handlePlanCategory={handlePlanCategory} />
+            <PricingCard filteredPlan={filteredPlan} />
         </div>
     );
 };

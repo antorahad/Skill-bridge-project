@@ -1,4 +1,5 @@
-const Pricing = ({ planCategory }) => {
+const Pricing = ({planCategories, selectedCategory, handlePlanCategory}) => {
+
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
             <div className="flex items-center justify-between">
@@ -8,15 +9,18 @@ const Pricing = ({ planCategory }) => {
                 </div>
                 <div>
                     <div className="flex items-center justify-center gap-5 bg-secondaryColor shadow-sm p-5 rounded-md">
-                        {
-                            planCategory.map(item => (
-                                <button className="btn capitalize" key={item.id}>{item.category}</button>
-                            ))
-                        }
+                        {planCategories.map(item => (
+                            <button
+                                onClick={() => handlePlanCategory(item.category)}
+                                className={`btn capitalize ${selectedCategory === item.category ? 'active bg-baseColor hover:bg-baseColor focus:bg-baseColor rounded-md text-white border-none outline-none text-[14px] font-[600]' : ''}`}
+                                key={item.id}
+                            >
+                                {item.category}
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
