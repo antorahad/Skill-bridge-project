@@ -26,7 +26,7 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[18px] font-[500]">Can I enroll in multiple courses at once?</h1>
-                                <button onClick={handleFaqOne} className="btn btn-square bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqOne} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleOne ?
                                             <IoMdClose size={30} /> :
@@ -46,7 +46,7 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
-                                <button onClick={handleFaqTwo} className="btn btn-square bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqTwo} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleTwo ?
                                             <IoMdClose size={30} /> :
@@ -65,8 +65,8 @@ const Faqs = ({ faqToggleOne,
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
-                                <h1 className="text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
-                                <button onClick={handleFaqThree} className="btn btn-square bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <h1 className="text-[18px] font-[500]">What kind of support can I expect from instructors?</h1>
+                                <button onClick={handleFaqThree} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleThree ?
                                             <IoMdClose size={30} /> :
@@ -77,7 +77,7 @@ const Faqs = ({ faqToggleOne,
                             {
                                 faqToggleThree &&
                                 <div className="p-5 shadow-sm rounded-b-md">
-                                    <p className="text-[16px] font-[400] leading-relaxed">Submit forms online, pay fees, attend orientation for course enrollment.</p>
+                                    <p className="text-[16px] font-[400] leading-relaxed">Instructors offer guidance, feedback, resources, and assistance for academic queries and challenges.</p>
                                 </div>
                             }
                         </div>
@@ -85,7 +85,7 @@ const Faqs = ({ faqToggleOne,
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
-                                <h1 className="text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
+                                <h1 className="text-[18px] font-[500]">Are the courses self-paced or do they have specific start and end dates?</h1>
                                 <button onClick={handleFaqFour} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleFour ?
@@ -97,7 +97,7 @@ const Faqs = ({ faqToggleOne,
                             {
                                 faqToggleFour &&
                                 <div className="p-5 shadow-sm rounded-b-md">
-                                    <p className="text-[16px] font-[400] leading-relaxed">Submit forms online, pay fees, attend orientation for course enrollment.</p>
+                                    <p className="text-[16px] font-[400] leading-relaxed">Courses have set start and end dates, not self-paced, following a structured schedule.</p>
                                 </div>
                             }
                         </div>
@@ -105,7 +105,7 @@ const Faqs = ({ faqToggleOne,
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
-                                <h1 className="text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
+                                <h1 className="text-[18px] font-[500]">Are there any prerequisites for the courses?</h1>
                                 <button onClick={handleFaqFive} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleFive ?
@@ -117,7 +117,7 @@ const Faqs = ({ faqToggleOne,
                             {
                                 faqToggleFive &&
                                 <div className="p-5 shadow-sm rounded-b-md">
-                                    <p className="text-[16px] font-[400] leading-relaxed">Submit forms online, pay fees, attend orientation for course enrollment.</p>
+                                    <p className="text-[16px] font-[400] leading-relaxed">Check course descriptions for specific prerequisites; requirements vary based on individual courses.</p>
                                 </div>
                             }
                         </div>
@@ -125,7 +125,7 @@ const Faqs = ({ faqToggleOne,
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
-                                <h1 className="text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
+                                <h1 className="text-[18px] font-[500]">Can I download the course materials for offline access?</h1>
                                 <button onClick={handleFaqSix} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
                                     {
                                         faqToggleSix ?
@@ -137,7 +137,7 @@ const Faqs = ({ faqToggleOne,
                             {
                                 faqToggleSix &&
                                 <div className="p-5 shadow-sm rounded-b-md">
-                                    <p className="text-[16px] font-[400] leading-relaxed">Submit forms online, pay fees, attend orientation for course enrollment.</p>
+                                    <p className="text-[16px] font-[400] leading-relaxed">Offline access to course materials depends on the platform's policy; check specific guidelines.</p>
                                 </div>
                             }
                         </div>
