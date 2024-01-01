@@ -2,8 +2,8 @@ const Pricing = ({planCategories, selectedCategory, handlePlanCategory}) => {
 
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
-            <div className="flex items-center justify-between">
-                <div className="flex flex-col gap-3">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
+                <div className="flex flex-col items-center lg:items-start gap-3">
                     <h1 className="text-[38px] font-[600]">Our Pricing</h1>
                     <p className="text-[16px] font-[400] text-thirdColor">Competitive pricing offering premium courses, ensuring value, affordability, and accessibility for all learners.</p>
                 </div>

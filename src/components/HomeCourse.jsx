@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HomeCourse = ({handleCourse, viewAllCourse}) => {
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
                 <div className="flex flex-col gap-3">
                     <h1 className="text-[38px] font-[600]">Our Courses</h1>
                     <p className="text-[16px] font-[400] text-thirdColor">Career-focused courses for professional growth, led by industry experts for your success.</p>
