@@ -1,6 +1,8 @@
-import { IoIosArrowRoundForward, IoMdClose } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
+import { FaPlus } from "react-icons/fa6";
 
-const Faqs = ({ faqToggleOne, 
+const Faqs = ({ 
+    faqToggleOne, 
     faqToggleTwo, 
     faqToggleThree, 
     faqToggleFour, 
@@ -12,7 +14,8 @@ const Faqs = ({ faqToggleOne,
     handleFaqThree,
     handleFaqFour,
     handleFaqFive,
-    handleFaqSix }) => {
+    handleFaqSix 
+    }) => {
     return (
         <div className="max-w-7xl mx-auto px-5 py-10">
             <div className="flex flex-col lg:flex-row items-start justify-between bg-white shadow-sm rounded-md">
@@ -26,11 +29,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">Can I enroll in multiple courses at once?</h1>
-                                <button onClick={handleFaqOne} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqOne} className="btn btn-square btn-md bg-baseColor hover:bg-baseColor focus:bg-baseColor bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 border-none outline-none">
                                     {
                                         faqToggleOne ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
@@ -46,11 +49,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">Enrollment Process for Different Courses</h1>
-                                <button onClick={handleFaqTwo} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqTwo} className="btn btn-square btn-md bg-baseColor hover:bg-baseColor focus:bg-baseColor bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 border-none outline-none">
                                     {
                                         faqToggleTwo ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
@@ -66,11 +69,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">What kind of support can I expect from instructors?</h1>
-                                <button onClick={handleFaqThree} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqThree} className="btn btn-square btn-md bg-baseColor hover:bg-baseColor focus:bg-baseColor bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 border-none outline-none">
                                     {
                                         faqToggleThree ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
@@ -86,11 +89,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">Are the courses self-paced or do they have specific start and end dates?</h1>
-                                <button onClick={handleFaqFour} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqFour} className="btn btn-square btn-md bg-baseColor hover:bg-baseColor focus:bg-baseColor bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 border-none outline-none">
                                     {
                                         faqToggleFour ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
@@ -106,11 +109,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">Are there any prerequisites for the courses?</h1>
-                                <button onClick={handleFaqFive} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqFive} className="btn btn-square btn-md bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 bg-baseColor hover:bg-baseColor focus:bg-baseColor border-none outline-none">
                                     {
                                         faqToggleFive ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
@@ -126,11 +129,11 @@ const Faqs = ({ faqToggleOne,
                         <div className="w-full">
                             <div className="flex items-center justify-between p-5 bg-navColor bg-opacity-30 rounded-t-md shadow-sm">
                                 <h1 className="text-[16px] lg:text-[18px] font-[500]">Can I download the course materials for offline access?</h1>
-                                <button onClick={handleFaqSix} className="btn btn-circle bg-baseColor hover:bg-baseColor focus:bg-baseColor text-white border-none outline-none">
+                                <button onClick={handleFaqSix} className="btn btn-square btn-md bg-baseColor hover:bg-baseColor focus:bg-baseColor bg-opacity-20 hover:bg-opacity-20 focus:bg-opacity-20 border-none outline-none">
                                     {
                                         faqToggleSix ?
-                                            <IoMdClose size={30} /> :
-                                            <IoIosArrowRoundForward size={30} />
+                                            <IoMdClose size={20} /> :
+                                            <FaPlus size={20} />
                                     }
                                 </button>
                             </div>
